@@ -1,0 +1,23 @@
+## Applications
+tint2 &
+pnmixer &
+wicd-client --tray &
+nitrogen --restore &
+clipit &
+udiskie -2 -s &
+pcmanfm -d &
+caffeine &
+
+## System configs
+source /home/derpy/.bash_aliases &
+xset b off &
+xrdb -merge ~/.Xresources &
+numlockx on &
+xset r rate 250 25 &
+
+## Remove logs
+rm -rf /home/derp/.xsession-errors &
+rm -rf /home/derp/.xsession-errors.old &
+
+## Gnome policykit and keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
